@@ -1,0 +1,51 @@
+ul {
+  list-style-type: none;
+  overflow-x:hidden;
+white-space:nowrap;
+
+width: 100%;
+}
+
+li
+{
+display:inline;
+position:relative;
+  top: -3px;
+  left: -25px;
+}
+
+li.child{
+  position:relative;
+  top: -1px;
+}
+
+figure {
+  float: left;
+  right: 0px
+}
+figcaption{
+  float:center;
+  text-align: center;
+}
+
+div.center{
+  float :center;
+  text-align:center
+}
+
+div.cont{
+  float :center;
+  text-align:center
+}
+
+img.gauche{
+  position:relative;
+  top: -120px;
+}
+
+img.droite{
+  right: -250px;
+}
+
+
+
