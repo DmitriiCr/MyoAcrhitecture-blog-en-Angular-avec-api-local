@@ -5,7 +5,7 @@
 //De base j'utilise Api public que je peux pas controller donc sur ce site on peux voir des postes venant d'autre utilisateur
 export const environment = {
   production: false,
-  apiUrl: 'https://conduit.productionready.io/api',
+  apiUrl: 'http://localhost:3000/api',
   limit: 10,
 }
 

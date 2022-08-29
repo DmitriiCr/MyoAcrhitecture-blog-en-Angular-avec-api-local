@@ -15,11 +15,14 @@ export class CreateArticleService {
   createArticle(
     articleInput: ArticleInputInterface
   ): Observable<ArticleInterface> {
+    console.log(environment.apiUrl + '/articles')
     const fullUrl = environment.apiUrl + '/articles'
+
     return this.http
-      .post<SaveArticleResponseInterface>(fullUrl, articleInput)
+      .post<SaveArticleResponseInterface>(fullUrl, {article: articleInput})
       .pipe(
         map((response: SaveArticleResponseInterface) => {
+          console.log(response.article)
           return response.article
         })
       )
